@@ -1,0 +1,19 @@
+[
+  {
+    "name": "/SmartDashboard/Shoot Voltage",
+    "type": "double",
+    "value": 3.0,
+    "properties": {
+      "persistent": true,
+      "retained": true
+    }
+  },
+  {
+    "name": "/SmartDashboard/Intake Voltage",
+    "type": "double",
+    "value": 5.0,
+    "properties": {
+      "persistent": true
+    }
+  }
+]

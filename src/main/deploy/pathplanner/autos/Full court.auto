@@ -1,0 +1,43 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.0895386600675945,
+      "y": 6.978397829474704
+    },
+    "rotation": -176.8396383739543
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Full 1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Smart Intake"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Full 2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "2024",
+  "choreoAuto": false
+}
