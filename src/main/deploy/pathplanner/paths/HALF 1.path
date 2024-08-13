@@ -8,7 +8,7 @@
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.389344600086194,
+        "x": 1.5442685959629048,
         "y": 5.6694889693935
       },
       "isLocked": false,
@@ -20,8 +20,8 @@
         "y": 7.000334849476065
       },
       "prevControl": {
-        "x": 0.1754961600108877,
-        "y": 7.439075249503284
+        "x": 1.059135936453691,
+        "y": 7.602927933128594
       },
       "nextControl": null,
       "isLocked": false,
@@ -39,13 +39,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 178.9949139947459,
+    "rotation": -178.49562486257946,
     "rotateFast": false
   },
   "reversed": false,
-  "folder": "Full court",
+  "folder": "Half",
   "previewStartingState": {
-    "rotation": -178.24659513992842,
+    "rotation": 0,
     "velocity": 0
   },
   "useDefaultConstraints": true

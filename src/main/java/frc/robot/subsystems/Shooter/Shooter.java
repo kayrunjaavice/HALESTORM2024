@@ -20,6 +20,8 @@ public class Shooter extends SubsystemBase {
     setDefaultCommand(stopShooter().ignoringDisable(true));
     SmartDashboard.putNumber("Shoot Voltage", 3);
     SmartDashboard.setPersistent("Shoot Voltage");
+    SmartDashboard.setPersistent("prespin shooter voltage");
+    SmartDashboard.putNumber("prespin shooter voltage",3);
 
   }
 
@@ -50,6 +52,14 @@ public class Shooter extends SubsystemBase {
     .withTimeout(1);
   }
 
+
+  public Command preSpinupShooter(){
+    return Commands.run(
+      ()-> ShooterMotor.setVoltage(SmartDashboard.getNumber("prespin shooter voltage",4)),
+
+      this
+    );
+  }
 
 
 

@@ -9,13 +9,14 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import com.ctre.phoenix6.hardware.TalonFX;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
+import frc.robot.subsystems.Shooter.Shooter;
 import java.util.function.BooleanSupplier;
 
 
 public class Intake extends SubsystemBase {
     private final TalonFX intakeMotor = new TalonFX(51);
     public final DigitalInput beamBreak = new DigitalInput(0);
+    public final Shooter m_shooter = new Shooter();
 
   /** Creates a new ExampleSubsystem. */
   public Intake() {
@@ -68,7 +69,8 @@ public class Intake extends SubsystemBase {
 
     return runIntake().until(beamBroken)
             .andThen(runEjectintake().until(beamNotBroken))
-            .andThen(stopIntake());
+            .andThen(stopIntake())
+            .andThen(m_shooter.preSpinupShooter());
             
   }
 
