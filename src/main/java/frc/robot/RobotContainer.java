@@ -75,6 +75,8 @@ public class RobotContainer {
 
     joystick.rightBumper().whileTrue(shoot);
 
+    joystick.povRight().whileTrue(m_shooter.preSpinupShooter);
+
 
 
 
