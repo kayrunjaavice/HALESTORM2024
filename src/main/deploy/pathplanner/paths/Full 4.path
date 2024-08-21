@@ -3,25 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 2.4304615881959033,
-        "y": 6.921929480222596
+        "x": 7.757175514351029,
+        "y": 7.444339252314869
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.7774493730805643,
-        "y": 7.4816542360357445
+        "x": 6.777657191678019,
+        "y": 7.42568176045443
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-        "x": 0.8072597963377744,
-        "y": 6.679382086036901
+        "x": 0.8445747800598152,
+        "y": 6.670053340106699
       },
       "prevControl": {
-        "x": 0.5682303939159755,
-        "y": 6.725529942017204
+        "x": 1.562888216686688,
+        "y": 6.847299512780862
       },
       "nextControl": null,
       "isLocked": false,
@@ -32,21 +32,21 @@
   "constraintZones": [],
   "eventMarkers": [],
   "globalConstraints": {
-    "maxVelocity": 3.0,
-    "maxAcceleration": 3.0,
+    "maxVelocity": 6.0,
+    "maxAcceleration": 8.0,
     "maxAngularVelocity": 540.0,
     "maxAngularAcceleration": 720.0
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -120.76271953423881,
-    "rotateFast": false
+    "rotation": -122.66091272167381,
+    "rotateFast": true
   },
   "reversed": false,
   "folder": "Full court",
   "previewStartingState": {
-    "rotation": -177.8789036033387,
+    "rotation": 179.59753778086466,
     "velocity": 0
   },
-  "useDefaultConstraints": true
+  "useDefaultConstraints": false
 }
