@@ -2,7 +2,7 @@
   {
     "name": "/SmartDashboard/Shoot Voltage",
     "type": "double",
-    "value": 8.0,
+    "value": 12.0,
     "properties": {
       "persistent": true,
       "retained": true
@@ -11,7 +11,16 @@
   {
     "name": "/SmartDashboard/Intake Voltage",
     "type": "double",
-    "value": 5.0,
+    "value": 3.0,
+    "properties": {
+      "persistent": true,
+      "retained": true
+    }
+  },
+  {
+    "name": "/SmartDashboard/prespin shooter voltage",
+    "type": "double",
+    "value": 3.0,
     "properties": {
       "persistent": true
     }

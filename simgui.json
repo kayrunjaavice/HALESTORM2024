@@ -5,6 +5,13 @@
         "visible": true
       }
     },
+    "Other Devices": {
+      "Talon FX (v6)[51]/Rotor Sensor": {
+        "header": {
+          "open": true
+        }
+      }
+    },
     "Timing": {
       "window": {
         "visible": false
@@ -24,6 +31,17 @@
   "NetworkTables": {
     "Persistent Values": {
       "open": false
+    },
+    "transitory": {
+      "Shuffleboard": {
+        ".recording": {
+          "open": true
+        },
+        "open": true
+      },
+      "SmartDashboard": {
+        "open": true
+      }
     }
   },
   "NetworkTables Info": {

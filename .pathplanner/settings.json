@@ -4,10 +4,12 @@
   "holonomicMode": true,
   "pathFolders": [
     "Full court",
-    "Half"
+    "Half",
+    "BCT"
   ],
   "autoFolders": [
-    "2024"
+    "2024",
+    "BCT"
   ],
   "defaultMaxVel": 3.0,
   "defaultMaxAccel": 3.0,
