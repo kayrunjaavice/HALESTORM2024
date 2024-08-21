@@ -96,7 +96,7 @@ public class RobotContainer {
   }
 
   public Command getAutonomousCommand() {
-    runAuto = drivetrain.getAutoPath("Half court");
+    runAuto = drivetrain.getAutoPath("4 note");
     /* First put the drivetrain into auto run mode, then run the auto */
     return runAuto;
   }
