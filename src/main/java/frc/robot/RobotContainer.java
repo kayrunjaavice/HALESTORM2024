@@ -62,7 +62,7 @@ public class RobotContainer {
         .applyRequest(() -> point.withModuleDirection(new Rotation2d(-joystick.getLeftY(), -joystick.getLeftX()))));
 
     // reset the field-centric heading on D pad up press
-    joystick.povUp().onTrue(drivetrain.runOnce(() -> drivetrain.seedFieldRelative()));
+    joystick.y().onTrue(drivetrain.runOnce(() -> drivetrain.seedFieldRelative()));
 
     joystick.pov(0).whileTrue(drivetrain.applyRequest(() -> forwardStraight.withVelocityX(0.5).withVelocityY(0)));
     joystick.pov(180).whileTrue(drivetrain.applyRequest(() -> forwardStraight.withVelocityX(-0.5).withVelocityY(0)));
