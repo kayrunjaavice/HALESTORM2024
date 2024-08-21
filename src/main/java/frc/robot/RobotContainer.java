@@ -7,12 +7,11 @@ package frc.robot;
 import com.ctre.phoenix6.mechanisms.swerve.SwerveRequest;
 import com.ctre.phoenix6.mechanisms.swerve.SwerveModule.DriveRequestType;
 import com.pathplanner.lib.auto.NamedCommands;
-
 import edu.wpi.first.math.geometry.Rotation2d;
-
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
 import edu.wpi.first.wpilibj2.command.button.CommandPS4Controller;
+import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine.Direction;
 import frc.robot.generated.TunerConstants;
 import frc.robot.subsystems.CommandSwerveDrivetrain;
@@ -57,12 +56,12 @@ public class RobotContainer {
             .withRotationalRate(-joystick.getRightX() * MaxAngularRate) // Drive counterclockwise with negative X (left)
         ).ignoringDisable(true));
 
-    joystick.x().whileTrue(drivetrain.applyRequest(() -> brake));
-    joystick.b().whileTrue(drivetrain
+    joystick.square().whileTrue(drivetrain.applyRequest(() -> brake));
+    joystick.circle().whileTrue(drivetrain
         .applyRequest(() -> point.withModuleDirection(new Rotation2d(-joystick.getLeftY(), -joystick.getLeftX()))));
 
     // reset the field-centric heading on D pad up press
-    joystick.povUp().onTrue(drivetrain.runOnce(() -> drivetrain.seedFieldRelative()));
+    joystick.PS().onTrue(drivetrain.runOnce(() -> drivetrain.seedFieldRelative()));
 
     joystick.pov(0).whileTrue(drivetrain.applyRequest(() -> forwardStraight.withVelocityX(0.5).withVelocityY(0)));
     joystick.pov(180).whileTrue(drivetrain.applyRequest(() -> forwardStraight.withVelocityX(-0.5).withVelocityY(0)));
@@ -76,7 +75,7 @@ public class RobotContainer {
     joystick.R1().whileTrue(shoot);
 
 
-    joystick.povRight().whileTrue(m_shooter.preSpinupShooter);
+    joystick.povRight().whileTrue(m_shooter.preSpinupShooter());
 
 
 

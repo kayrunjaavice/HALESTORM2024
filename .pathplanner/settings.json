@@ -3,13 +3,15 @@
   "robotLength": 0.9,
   "holonomicMode": true,
   "pathFolders": [
+    "BCT",
     "Full court",
     "Half",
-    "BCT"
+    "4 note"
   ],
   "autoFolders": [
     "2024",
-    "BCT"
+    "BCT",
+    "New Folder"
   ],
   "defaultMaxVel": 3.0,
   "defaultMaxAccel": 3.0,
